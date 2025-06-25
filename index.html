@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Time</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <h1>Coffee Time ☕</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+    </header>
+<section class="hero" >
+  <div class="hero-content">
+    <h2>Start Your Coffee Journey</h2>
+    <p>Order your favourite brew now ☕</p>
+    <a href="#Menu" class="hero-btn">Explore Menu</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="Menu" id="Menu">
+        <h2>Our Menu 📜</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="/coffee.new/images/expresssooo.jpeg" alt="expresssooo">
+                <h3>Espresso</h3>
+                <p>Strong and bold</p>
+                <p><b>₹80</b></p>
+            </div>
+            <div class="item">
+                <img src="/coffee.new/images/latte.jpeg" alt="latte">
+                <h3>Latte</h3>
+                <p>Creamy and smooth</p>
+                <p><b>₹120</b></p>
+                
+            </div>
+            <div class="item">
+                <img src="/coffee.new/images/cappucino.jpeg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Rich and foamy</p>
+                <p><b>₹130</b></p>
+            </div>
+            <div class="item">
+              <img src="/coffee.new/images/cheesecake.webp" alt="cheesecake">
+              <h3><b>Cheesecake</b></h3>
+              <p>Creamy Dessert</p>
+              <p><b>₹180</b></p>
+            </div>
+            <div class="item">
+              <img src="/coffee.new/images/chocho lava.webp" alt="chocolava">
+              <h3>chocolava</h3>
+              <p> Molten chocolate yummy yummy</p>
+              <p><b>₹150</b></p>
+            </div>
+            <div class="item">
+              <img src="/coffee.new/images/red velvet brownies.webp" alt="red velvet">
+              <h3>Red Velvet Brownie</h3>
+              <p> 
+"Classic red velvet with a melt-in-mouth charm."</p>
+<p><b>₹170</b></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="favorites">
+  <h2>Customer Favorites ❤️</h2>
+  <p class="fav-subtext">Our most loved Coffee & Dessert picks by our regulars!</p>
+  <div class="fav-items">
+   
+     
+      
+    
+    <div class="fav-card">
+      <img src="/coffee.new/images/latte.jpeg" alt="Latte">
+         <p>⭐⭐⭐⭐</p>
+      <h3>Latte</h3>
+     
+      
+    
+    </div>
+    <div class="fav-card">
+      <img src="/coffee.new/images/cappucino.jpeg" alt="Cappuccino">
+     
+      <p>⭐⭐⭐⭐⭐</p>
+       <h3>Cappuccino</h3>
+       
+    </div>
+
+
+    <div class="fav-card">
+      <img src="/coffee.new/images/red velvet brownies.webp" alt="Red velvetcake">
+      <p>⭐⭐⭐⭐⭐</p>
+      <h3>Red Velvet Cake</h3>
+    </div>
+   
+    <div class="fav-card">
+      <img src="/coffee.new/images/cheesecake.webp" alt="Cheesecake">
+      <p>⭐⭐⭐⭐⭐</p>
+      <h3>Cheesecake</h3>
+    </div>
+
+
+  </div>
+</section>
+
+<pre>
+   <b>--- Our Thought---
+
+Brewed slow like trust,
+Warm like hugs,
+Bittersweet like memories—
+That’s the kind of coffee I crave.
+</b>
+
+</pre>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/coffee.new/images/pexels-ekam-juneja-61080223-30318143.jpg" alt="Front">
+    </div>
+    <div class="flip-card-back">
+      <div class="back-text">
+       
+        <p>
+“Bring your date, sip together, and save together!
+💑 10% OFF on couple combos this Valentine’s!”
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🧾 Order Section (Separate from Menu) -->
+<section class="order-section">
+  <h2>☕Your Coffee Journey Begins Here</h2> <!-- 👈 Feel free to change this heading -->
+  
+  <div class="order-item">
+    <span>Espresso</span>
+    <span>₹80</span>
+    <button onclick="addToCart('Espresso', 80)">Add</button>
+  </div>
+  <div class="order-item">
+    <span>Latte</span>
+    <span>₹120</span>
+    <button onclick="addToCart('Latte', 120)">Add</button>
+  </div>
+  <div class="order-item">
+    <span>Cappuccino</span>
+    <span>₹130</span>
+    <button onclick="addToCart('Cappuccino', 130)">Add</button>
+  </div>
+
+  <div class="order-item">
+    <span>Cheesecake</span>
+    <span>₹180</span>
+    <button onclick="addToCart('Cheesecake', 180)">Add</button>
+  </div>
+
+  <div class="order-item">
+    <span>chocolava</span>
+    <span>₹150</span>
+    <button onclick="addToCart('chocolava',150)">Add</button>
+  </div>
+
+  
+  <div class="order-item">
+    <span>Red Velvet Brownie</span>
+    <span>₹170</span>
+    <button onclick="addToCart('Red Velvet Brownie',170)">Add</button>
+  </div>
+
+  <div class="cart">
+    <h3>🛒 Your Cart</h3>
+    <div id="cart-items"></div>
+    <p class="total">Total: ₹<span id="total-price">0</span></p>
+ 
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="About" id="About">
+  <h2>About Us</h2><br>
+  <p>
+    At <strong>Coffee & Love</strong>, we believe every cup tells a story.  
+    Founded by <strong>Riya Singh</strong> in 2024, our space blends warm coffee with warm hearts.
+  </p>
+  <p>
+    Whether it’s your first date or your daily escape, we’re here to make every sip special.  
+    Come, share a moment, sip some love. ☕💘
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-left">
+  
+    <h2>CoffeeTime</h2>
+    <p>Bringing hearts closer over a cup of warmth.<br>
+    Where every sip tells a story of love, calm, and connection.</p>
+    
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <h3>Quick Links</h3>
+    <ul>
+      <li>Our Menu</li>
+      <li>Book a Table</li>
+      <li>Special Offers</li>
+      <li>Gallery</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+</footer>
+
+<p class="footer-bottom">© 2025 CoffeeTime. All rights reserved.</p>
+
+
+<script src="cart.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

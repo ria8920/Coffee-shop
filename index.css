@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+h1{
+    font-family: cursive;
+}
+h1:hover{
+    color: #3e2c1c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+body {
+    background-color: #fff8f0;
+    color: #3e2c1c;
+  
+}
+
+header {
+    background-color: #6f4e37;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.hero {
+  background-image: url("/coffee.new/images/wall.jpg"); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+.hero:hover{
+  background-image: url(/coffee.new/images/background\ imageee.avif);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background-color: #6b3e26;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #4b2a18;
+}
+
+
+
+.Menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Menu h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+    
+   
+
+
+
+.menu-items img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.menu-items img:hover{
+    border: 5px solid  #6f4e37;
+    cursor: pointer;
+    filter: brightness(1.1);
+    transform: scale(1.1)
+    rotate(-2deg);
+}
+
+.item {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.favorites {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.fav-subtext {
+  font-size: 16px;
+  color: #5a4b41;
+  margin-bottom: 30px;
+}
+
+.fav-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.fav-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.fav-card:hover {
+  transform: translateY(-8px);
+}
+
+.fav-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+pre{
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+  margin-top: 50px;
+}
+pre:hover{
+  font-size: 25px;
+  color: rgb(171, 42, 42);
+  font-weight: bold;
+ 
+}
+  .flip-card {
+  width: 250px;
+  height: 400px;
+justify-content: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Right to left flip */
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid  #6f4e37;
+}
+
+.flip-card-back {
+  background-color: #6f4e37; /* Brownish background */
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.back-text p {
+  font-size: 25px;
+  font-family:cursive ;
+}
+
+.order-section {
+  max-width: 650px;
+  height: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #c1a596;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family:  cursive;
+  border: 5px solid #674d40 ;
+}
+
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5a3e36;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.order-item button {
+  background-color: #6b3e26;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .About p{
+  font-size: 25px;
+ font-family: cursive;
+ margin-bottom: 20px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #6f4e37;
+  color: #e0e0e0;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+  width: 45%;
+}
+
+.footer-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.footer-right h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #6f4e37;;
+  color: #ccc;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+
+
